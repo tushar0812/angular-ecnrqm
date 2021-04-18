@@ -1,6 +1,6 @@
 <h2>Products</h2>
 <div *ngFor="let product of products">
-<h3 [title]="product.name + ' details'">
+<h3 [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
   {{ product.name}}
 </h3>
 <p *ngIf="product.description">
